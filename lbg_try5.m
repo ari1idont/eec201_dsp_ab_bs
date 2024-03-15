@@ -9,7 +9,7 @@ centroid_codebook=[temp1];
 % temp2=temp1.*(1+threshold);
 % temp3=temp1.*(1-threshold);
 % centroid_codebook=[temp2 temp3];
-M=6;
+M=10;
 temp4=disteu(centroid_codebook,data);
 D=sum(temp4);
     % holder=[];
@@ -46,6 +46,9 @@ D=sum(temp4);
             end
         end
         %centroid_codebook(:,i)=mean(holder')';
+        if size(holder,1)==0
+            continue;
+        end
         centroid_codebook(:,i)=mean(holder')';
         d=sum(abs(disteu(centroid_codebook(:,i),holder)));
         D_n=D_n+abs(d);
@@ -67,7 +70,7 @@ D=sum(temp4);
     end
 
 
-save('C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\s11_cent_4.mat',"centroid_codebook")
+save('C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\s11_cent_5.mat',"centroid_codebook")
 
 %p=disteu(centroid_codebook,data)
 
