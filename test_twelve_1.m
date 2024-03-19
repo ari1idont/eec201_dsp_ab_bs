@@ -1,114 +1,95 @@
-%centroids zero_number_cent_3
+%twelve1_cent_2
+%twelve1_test_1
 
+clc
+clear all
 
-c1=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve1_cent_1.mat");
+c1=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve1_cent_3.mat");
 centroid1=c1.centroid_codebook;
-c2=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve2_cent_1.mat");
+c2=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve2_cent_3.mat");
 centroid2=c2.centroid_codebook;
-c3=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve3_cent_1.mat");
+c3=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve3_cent_3.mat");
 centroid3=c3.centroid_codebook;
-c4=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve4_cent_1.mat");
+c4=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve4_cent_3.mat");
 centroid4=c4.centroid_codebook;
-% c5=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\zero5_cent_1.mat");
+% c5=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\zero5_cent_.mat");
 % centroid5=c5.centroid_codebook;
-c6=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve6_cent_1.mat");
+c6=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve6_cent_3.mat");
 centroid6=c6.centroid_codebook;
-c7=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve7_cent_1.mat");
+c7=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve7_cent_3.mat");
 centroid7=c7.centroid_codebook;
-c8=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve8_cent_1.mat");
+c8=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve8_cent_3.mat");
 centroid8=c8.centroid_codebook;
-c9=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve9_cent_1.mat");
+c9=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve9_cent_3.mat");
 centroid9=c9.centroid_codebook;
-c10=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve10_cent_1.mat");
+c10=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve10_cent_3.mat");
 centroid10=c10.centroid_codebook;
-c11=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve11_cent_1.mat");
+c11=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve11_cent_3.mat");
 centroid11=c11.centroid_codebook;
-c12=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve12_cent_1.mat");
+c12=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve12_cent_3.mat");
 centroid12=c12.centroid_codebook;
-c13=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve13_cent_1.mat");
+c13=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve13_cent_3.mat");
 centroid13=c13.centroid_codebook;
-c14=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve14_cent_1.mat");
+c14=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve14_cent_3.mat");
 centroid14=c14.centroid_codebook;
-c15=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve15_cent_1.mat");
+c15=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve15_cent_3.mat");
 centroid15=c15.centroid_codebook;
-c16=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve16_cent_1.mat");
+c16=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve16_cent_3.mat");
 centroid16=c16.centroid_codebook;
-c17=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve17_cent_1.mat");
+c17=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve17_cent_3.mat");
 centroid17=c17.centroid_codebook;
-c18=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve18_cent_1.mat");
+c18=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve18_cent_3.mat");
 centroid18=c18  .centroid_codebook;
-c19=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve19_cent_1.mat");
+c19=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve19_cent_3.mat");
 centroid19=c19.centroid_codebook;
 
 
 
 
-% c1=matfile("s1.mat");
-% test1=c1.cepstrum_frames;
-% c2=matfile("s2.mat");
-% test2=c2.cepstrum_frames;
-% c3=matfile("s3.mat");
-% test3=c3.cepstrum_frames;
-% c4=matfile("s4.mat");
-% test4=c4.cepstrum_frames;
-% c5=matfile("s5.mat");
-% test5=c5.cepstrum_frames;
-% c6=matfile("s6.mat");
-% test6=c6.cepstrum_frames;
-% c7=matfile("s7.mat");
-% test7=c1.cepstrum_frames;
-% c8=matfile("s8.mat");
-% test8=c8.cepstrum_frames;
-% c9=matfile("s9.mat");
-% test9=c9.cepstrum_frames;
-% c10=matfile("s10.mat");
-% test10=c10.cepstrum_frames;
-% c11=matfile("s11.mat");
-% test11=c11.cepstrum_frames;
 
-
-
-c1=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test1.mat");
+c1=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve1_test_2.mat");
 test1=c1.cepstrum_frames;
-c2=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test2.mat");
+c2=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve2_test_2.mat");
 test2=c2.cepstrum_frames;
-c3=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test3.mat");
+c3=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve3_test_2.mat");
 test3=c3.cepstrum_frames;
-c4=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test4.mat");
+c4=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve4_test_2.mat");
 test4=c4.cepstrum_frames;
 % c5=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\zero6.mat");
 % test5=c5.cepstrum_frames;
-c6=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test6.mat");
+c6=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve6_test_2.mat");
 test6=c6.cepstrum_frames;
-c7=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test7.mat");
+c7=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve7_test_2.mat");
 test7=c7.cepstrum_frames;
-c8=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test8.mat");
+c8=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve8_test_2.mat");
 test8=c8.cepstrum_frames;
-c9=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test9.mat");
+c9=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve9_test_2.mat");
 test9=c9.cepstrum_frames;
-c10=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test10.mat");
+c10=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve10_test_2.mat");
 test10=c10.cepstrum_frames;
-c11=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test11.mat");
+c11=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve11_test_2.mat");
 test11=c11.cepstrum_frames;
-c12=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test12.mat");
+c12=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve12_test_2.mat");
 test12=c12.cepstrum_frames;
-c13=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test13.mat");
+c13=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve13_test_2.mat");
 test13=c13.cepstrum_frames;
-c14=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test14.mat");
+c14=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve14_test_2.mat");
 test14=c14.cepstrum_frames;
-c15=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test15.mat");
+c15=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve15_test_2.mat");
 test15=c15.cepstrum_frames;
-c16=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test16.mat");
+c16=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve16_test_2.mat");
 test16=c16.cepstrum_frames;
-c17=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test17.mat");
+c17=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve17_test_2.mat");
 test17=c17.cepstrum_frames;
-c18=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test18.mat");
+c18=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve18_test_2.mat");
 test18=c18.cepstrum_frames;
-c19=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve_test19.mat");
+c19=matfile("C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve19_test_2.mat");
 test19=c19.cepstrum_frames;
 
 
-test_signal=test6;
+% enter the sample you want to execute
+
+test_signal=test3;
 %test_signal(:,1:7)=[];
 
 framedist=zeros(11,size(test_signal,2));
@@ -224,8 +205,7 @@ for i=1:size(x19,2)
     framedist(19,i)=min(x19(:,i));
 end
 
-
-
+framedist(:,1)=[];
 %majority decision
 speaker = 1;
 min_dist = sum(framedist(1,:));

@@ -1,4 +1,4 @@
-c=matfile("s11.mat");
+c=matfile('C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\StudentAudioRecording\twelve19_2.mat');
 data=c.cepstrum_frames;
 %data=data(6:7,:)';
 num_initial_centroids = 2;
@@ -9,7 +9,7 @@ centroid_codebook=[temp1];
 % temp2=temp1.*(1+threshold);
 % temp3=temp1.*(1-threshold);
 % centroid_codebook=[temp2 temp3];
-M=10;
+M=64;
 temp4=disteu(centroid_codebook,data);
 D=sum(temp4);
     % holder=[];
@@ -70,7 +70,7 @@ D=sum(temp4);
     end
 
 
-save('C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\s11_cent_5.mat',"centroid_codebook")
+save('C:\Users\arind\Documents\winter_quarter_2024\eec201\final_project\centroids3\twelve19_cent_3.mat',"centroid_codebook")
 
 %p=disteu(centroid_codebook,data)
 
